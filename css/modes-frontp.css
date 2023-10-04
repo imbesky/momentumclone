@@ -1,0 +1,60 @@
+.modebuttons input {
+    font-family: NanumMyeongjo;
+    text-align: left;
+}
+.modebuttons input:first-child{
+    color: white;
+    border: 0.1vw solid white;
+    background-color: black;
+}
+.modebuttons input:last-child{
+    color: black;
+    border: 0.1vw solid black;
+    background-color: white;
+}
+.daymode {
+    color: black;
+    background-color: white;
+    background-image: url(../imgs/bookimg.png);
+}
+.nightmode {
+    color: white;
+    background-color: black;
+    background-image: url(../imgs/bookimg-white.png);
+}
+.modebuttons {
+    margin: 2vw 2vw 0 2vw;
+}
+
+.namesetting button{
+    font-family: NanumMyeongjo;
+    height: 1.3vw;
+    width: 15vw;
+    border: none;
+    text-align: center;
+}
+.daymode .namesetting button {
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+.nightmode .namesetting button {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+.namesetting form input{
+    width: 15vw;
+    height: 1.3vw;
+    align-content: center;
+}
+.daymode .namesetting form input{
+    border-left: 0.1vw solid black;
+}
+.nightmode .namesetting form input{
+    border-left: 0.1vw solid white;
+}
+.namesetting {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    display: grid;
+    height: 8vw;
+}

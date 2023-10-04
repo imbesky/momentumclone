@@ -1,0 +1,62 @@
+#sentence {
+    font-size: 1.2vw;
+    text-align: left;
+    min-height: 6vw;
+    grid-column: 1/4;
+}
+#book {
+    font-size: 1vw;
+    display: inline-block;
+    animation: flip 4s infinite;
+    animation-delay: calc(.3s * var(--i));
+    margin: 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.booksentences {
+    margin: 2vw 4vw 0 4vw;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+
+#clock {
+    text-align: left;
+    margin-left: 4vw;
+}
+
+#saphwa {
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    text-align: center;
+}
+.links img {
+    width: 5vw;
+    padding-right: 2vw;
+}
+.links p {
+    font-size: 1.2vw;
+    padding-top: 0.2vw;
+}
+.daymode .links {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+.nightmode .links {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}

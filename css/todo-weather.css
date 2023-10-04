@@ -1,0 +1,85 @@
+.checked, .checked * {
+    text-decoration: line-through;
+    color: rgb(175, 175, 175);
+}
+.checkinput {
+    display: none;
+}
+:checked+label {
+    content: url(../imgs/checked.png);
+    height: 2vw;
+    width: 2.4vw;
+}
+label {
+    content: url(../imgs/unchecked.png);
+    height: 2vw;
+    width: 2.4vw;
+}
+li span {
+    display: inline-block;
+    width: 24vw;
+}
+#deletebutton {
+    background: url(../imgs/deletesign.png);
+    background-repeat: no-repeat;
+    background-size: 2vw;
+    border: none;
+    width: 2vw;
+    height: 2vw;
+}
+.todos ul {
+    overflow: auto;
+    height: 20vw;
+}
+.daymode .todos ul {
+    background-color: rgb(240, 240, 240);
+}
+.nightmode .todos ul {
+    background-color: rgb(39, 39, 39);
+}
+.todos form input {
+    width: 24vw;
+    height: 1.3vw;
+}
+.daymode .todos form input {
+    border-bottom: 0.1vw solid black;
+}
+.nightmode .todos form input {
+    border-bottom: 0.1vw solid white;
+}
+.todos h2, .todos form {
+    margin-left: 2vw;
+}
+.weather {
+    font-size: 1.5vw;
+    text-align: right;
+    margin-bottom: 1vw;
+    text-align: left;
+    margin-left: 4vw;
+}
+
+.nightmode ::-webkit-scrollbar {
+    width: 1.2vw;
+}
+.nightmode  ::-webkit-scrollbar-track {
+    background: #525252;
+}
+.nightmode  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
+}
+.nightmode ::-webkit-scrollbar-thumb:hover {
+    background: rgb(212, 212, 212);
+}
+
+.daymode ::-webkit-scrollbar {
+    width: 1.2vw;
+}
+.daymode  ::-webkit-scrollbar-track {
+    background: rgb(230, 230, 230);
+}
+.daymode  ::-webkit-scrollbar-thumb {
+    background: rgb(158, 158, 158);
+}
+.daymode ::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 117, 117);
+}

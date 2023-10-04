@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modes-frontp.css">
+    <link rel="stylesheet" href="css/sap-clo-sen-lin.css">
+    <link rel="stylesheet" href="css/todo-weather.css">
+    <title>Momentum Clone</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="container daymode">
+<div class="container-left">
+    <div class="modebuttons">
+        <input id="night" type="button" value="밤으로">
+        <input id="day" type="button" value="낮으로">  
+    </div>
+    <div class="namesetting">
+        <h2 id="username"></h2>
+        <form id="setname">
+            <input id="name" type="text" required placeholder="이름을 입력하세요.">
+        </form>
+        <button id="resetname">이름을 다시 정할래요.</button>
+    </div>
+    <div class="todos">
+        <h2>오늘의 할 일</h2>
+        <form id="todoform">
+            <input type="text" placeholder="할 일을 입력하세요.">
+        </form>
+        <ul id="todolist">
+        </ul>
+    </div>
+</div>
+<div class="container-right">
+    <div class="clock">     
+        <h2 id="clock"></h2>
+    </div>
+    <div id="weather" class="weather">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="saphwaimg">
+        <img id="saphwa" src="">
+    </div>
+    <div class="booksentences">
+        <p id="sentence"></p>
+        <p id="book"></p>
+    </div>
+    <div class="links">
+        <p>책에 대해서 더 알고 싶다면</p>
+        <a href="https://www.google.co" target="_blank"><img src="imgs/icon-g.png"></a>
+        <a href="https://www.naver.com/" target="_blank"><img src="imgs/icon-n.png"></a>
+        <a href="https://www.nl.go.kr/" target="_blank"><img src="imgs/icon-c.png"></a>
+        <a href="http://ebook.dkyobobook.co.kr" target="_blank"><img src="imgs/icon-k.png"></a>
+    </div>
+</div>
+</div>
+    <script src="js/Frontpage.js"></script>   
+    <script src="js/Clock.js"></script>
+    <script src="js/Sentence.js"></script>
+    <script src="js/Saphwa.js"></script>
+    <script src="js/Mode.js"></script>
+    <script src="js/Todo.js"></script>
+    <script src="js/Weather.js"></script>
+</body>
+</html>

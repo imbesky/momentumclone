@@ -1,0 +1,38 @@
+.hidden {
+    display: none;
+}
+.nightmode input[type=text]{
+    border: none;
+    background: none;
+    color: white;
+    font-family: NanumMyeongjo;
+}
+.daymode input[type=text]{
+    border: none;
+    background: none;
+    color: black;
+    font-family: NanumMyeongjo;
+}
+body {
+    font-family: NanumMyeongjo;
+    display: inline-block;
+}
+.container {
+    display: grid;
+    grid-template-columns: 38vw 38vw;
+    grid-template-rows: 50vw;
+    column-gap: 8vw;
+    padding: 3vw 6vw 8vw 8vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+.container-left, container-right {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-weight: bold;
+    font-size: 2vw;
+}
